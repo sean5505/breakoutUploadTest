@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout</title>
+    <link rel="stylesheet" href="breakout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form id="difficulty-form" action="">
+                <label for="difficulty">Select Difficulty:</label>
+                <select name="" id="difficulty" >
+                     <option value=".5" >Amateur</option>
+                     <option value="1" selected>Balanced</option>
+                     <option value="1.2">I want a challenge</option>
+                     <option value="1.5">No Mercy!</option>
+                     <option value="2">Impossible</option>
+                </select>
+            </form>
+        </div>
+       
+        <div id="score"> Current Score: 0</div>
+        <div id="blocksRemain">Total Number of Remaining Blocks: 108</div>
+        <div> 
+             <button id ="start">Start</button>
+             <button id="restart">Restart</button>
+         </div>
+    </div>
+    <div class="container">
+        <div class="grid"></div>
+        <div class="controls">
+            <h3> <span id="header" >Key Controls</span>
+                <li> <span id="key">Spacebar</span> - Start/Pause</li>
+                <li> <span id="key">r</span> - Restart</li>
+                <li> <span id="key">m</span> - toggle sfx music</li>
+                <li> <span id="key"><i class="fa fa-mouse"></i></span> Control User Movement</li>
+                <li> <span id="key"><i class="fa fa-arrow-left"></i></span> Move left</li>
+                <li> <span id="key"><i class="fa fa-arrow-right"></i></span>  Move right</li>
+            </h3>
+        </div>
+    </div>
+
+    
+    <script src ="breakout.js" type = "module" ></script>
+</body> 
+</html>
+
+
+

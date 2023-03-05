@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+    background-image: linear-gradient(
+                    rgba(140, 0, 255, 0.562),rgba(0, 68, 255, 0.815));
+}
+
+#score{
+    font-weight: 900;
+    font-size: 20px;
+    
+  
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap:40px;
+    
+}
+
+.container form select:hover,
+.container form select option:hover{
+    cursor: pointer;
+    
+}
+
+.container button{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    margin: 0 10px;
+   
+   
+    
+
+}
+button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: red;
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.grid {
+    position: relative;
+    width: 560px; 
+    height: 550px;
+    margin-top: 20px;
+    border: dashed black 3px;
+   /* background-image: url(imagesss/koutt.jpg); */
+}
+
+.controls{
+    border: 1px solid;
+    text-align: center;
+    list-style: none;
+    margin-left: 20px;
+}
+.controls #header{
+    text-decoration: underline;
+}
+
+.controls #key{
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+.controls #key:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+.block {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    border: solid black 2px;
+ 
+}
+.user {
+    position: absolute;
+    width: 50px; 
+    height: 10px;
+    background-color:black;
+
+}
+
+.user:hover{
+    cursor: pointer;
+}
+
+
+.ball {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: red ;
+}
+
+.youLose{
+    animation: youLoseAnimation 3s infinite ;
+}
+
+@keyframes youLoseAnimation {
+    from{font-size: 20px;}
+    to{font-size: 24px; color:red;}
+    
+}
+
+
+
+.laser{
+    background-color:purple;
+    height: 5px;
+    width: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width:765px){
+
+    .controls{
+        display: none;
+    }
+    .container button{
+     margin: 5px 0;
+    }
+
+}
+
